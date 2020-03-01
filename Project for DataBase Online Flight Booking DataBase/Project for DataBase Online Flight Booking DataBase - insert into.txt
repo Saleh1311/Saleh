@@ -1,0 +1,145 @@
+CREATE TABLE USER (
+  FName VARCHAR(10) NOT NULL,
+  MName VARCHAR(10) NOT NULL,
+  LFName VARCHAR(10) NOT NULL,
+  Phone_Number INT NOT NULL,
+  Email VARCHAR(100) NOT NULL,
+  Password VARCHAR(30) NOT NULL,
+  PRIMARY KEY (`Email`));
+  
+INSERT INTO USER (FName, MName, LFName, Phone_Number, Email,Password)
+VALUES ('Adel', 'Ahmad', 'Falah', 0591147987, 'Ade2l@hotmail.com', 'QWe1235r'),
+('Fawzia', 'Hassan', 'Karim', 0505168579, 'Fawzia1@hotmail.com', 'G5t_rty2'),
+('Mohamed', 'Khalid', 'Nasr', 0555789632, 'MohamedD1@hotmail.com', '3Er5Y678'),
+('Naif', 'Mohamed', 'Adel', 0505132549, 'Naif_Mohameda@hotmail.com', 'Vb5Yuiqa');
+
+CREATE TABLE `Passenger` (
+  `FName` VARCHAR(45) NULL,
+  `MName` VARCHAR(45) NULL,
+  `LFName` VARCHAR(45) NULL,
+  PED Date not null,
+  `BirthDate` date not null,
+  `Ptid/Nid` INT NOT NULL,
+  `Email` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`Ptid/Nid`),
+    FOREIGN KEY (`Email`)
+    REFERENCES `USER` (`Email`));
+    
+    INSERT INTO `Passenger` (`FName`, `MName`, `LFName`, `PED`,  `BirthDate`, `Ptid/Nid`, `Email`)
+VALUES ('Zara', 'Saad', 'Khalid', "2022-3-1", "1995-2-9", 1077367684, 'Ade2l@hotmail.com'),
+('Mohamed', 'Khalid', 'Nasr', "2025-7-11", "1992-5-24", 1901456534, 'MohamedD1@hotmail.com'),
+('Karim', 'Hassan', 'Naif', "2021-10-3", "1998-9-21", 1188785421, 'Naif_Mohameda@hotmail.com');
+
+CREATE TABLE `Airline_Company` (
+  `Name` VARCHAR(45) NOT NULL,
+  `Country` VARCHAR(45) NULL,
+  `Airline_Com_ID` VARCHAR(10) NOT NULL,
+  PRIMARY KEY (`Airline_Com_ID`));
+  
+  INSERT INTO `Airline_Company` (`Name`, `Country`, `Airline_Com_ID`) 
+  VALUES ('Saudia Airlines', 'Saudi Arabia', 'A1000'),
+ ('flydubai', 'United Arab Emirates', 'A1001'),
+ ('Emirates ', 'United Arab Emirates', 'A1002');
+ 
+ 
+ CREATE TABLE  `LUGGAGE` (
+  `Type` VARCHAR(45) NULL,
+  `Weight` INT(2) NULL,
+  `TicketID` VARCHAR(45) NOT NULL,
+  `Luggage_ID` VARCHAR(10) NOT NULL,
+  PRIMARY KEY (`Luggage_ID`));
+  INSERT INTO `LUGGAGE` (`Type`, `Weight`, `TicketID`, `Luggage_ID`) 
+  VALUES ('box', 25, 'T1000', 'L1000'),
+ ('Wheeled Duffels', 15, 'T1001', 'L1001');
+
+ 
+ CREATE TABLE `TICKET` (
+  `Destination` VARCHAR(45) NOT NULL,
+  `Departure` VARCHAR(45) NOT NULL,
+  `Price` VARCHAR(45) NOT NULL,
+  `TicketID` VARCHAR(10) NOT NULL,
+  `Luggage_ID` VARCHAR(10) NULL,
+  `Airline_Com_ID` VARCHAR(10) NOT NULL,
+  `Year` INT(4) NOT NULL,
+  `Month` INT(2) NOT NULL,
+  `Day` INT(2) NOT NULL,
+  `TIME` VARCHAR(5) NOT NULL,
+  `Ptid/Nid` INT NOT NULL,
+  `Email` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`TicketID`),
+    FOREIGN KEY (`Luggage_ID`)
+    REFERENCES `LUGGAGE` (`Luggage_ID`),
+    FOREIGN KEY (`Airline_Com_ID`)
+    REFERENCES `Airline_Company` (`Airline_Com_ID`),
+    FOREIGN KEY (`Ptid/Nid`)
+    REFERENCES `Passenger` (`Ptid/Nid`),
+    FOREIGN KEY (`Email`)
+    REFERENCES `USER` (`Email`));
+    
+    INSERT INTO `TICKET` (`Destination`, `Departure`, `Price`, `TicketID`, `Luggage_ID`, `Airline_Com_ID`, `Year`, `Month`, `Day`, `TIME`, `Ptid/Nid`, `Email`) 
+ VALUES ('Hail','Riyadh','250','T1000','L1000','A1000', 2019, 11, 16, '14:00', 1077367684,'Ade2l@hotmail.com'),
+ ('Jeddah','Tabuk','350','T1001','L1001','A1000', 2019, 11, 17, '16:00', 1901456534,'MohamedD1@hotmail.com');
+ 
+CREATE TABLE `PAYMENT` (
+  `Card_Name` VARCHAR(45) NOT NULL,
+  `CVV` INT(3) NOT NULL,
+  `Year` INT(2) NOT NULL,
+  `month` INT(2) NOT NULL,
+  `Card_Number` INT(30) NOT NULL,
+  `Email` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`Card_Number`),
+    FOREIGN KEY (`Email`)
+    REFERENCES `USER` (`Email`));
+    
+    INSERT INTO `PAYMENT` (`Card_Name`, `CVV`, `Year`, `month`,`Card_Number`, `Email`) 
+    VALUES ('Adel Falah', 885, 20, 03, 561059108,'Ade2l@hotmail.com');
+    
+    CREATE TABLE `TIC_Class` (
+  `Travel_Class` VARCHAR(15) NOT NULL,
+  `TicketID` VARCHAR(10) NOT NULL,
+  PRIMARY KEY (`Travel_Class`, `TicketID`));
+  
+  INSERT INTO `TIC_Class` (`Travel_Class`, `TicketID`) 
+  VALUES ('Business class', 'T1000'),
+('Economy class', 'T1001');
+
+CREATE table `DISCOUNT` (
+  `User_ID` VARCHAR(10) NOT NULL,
+  `CN/LN` VARCHAR(45) NOT NULL,
+  `Scale` INT(2) NULL,
+  `Email` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`User_ID`,`Email`));
+  
+  INSERT INTO `DISCOUNT` (`User_ID`, `CN/LN`, `Scale`, `Email`) 
+  VALUES ('1099987858', 'Falah', 25, 'Ade2l@hotmail.com');
+  
+  CREATE TABLE `Pay` (
+  `Card_Number` INT(45) NOT NULL,
+  `TicketID` VARCHAR(10) NOT NULL,
+  `Luggage_ID` VARCHAR(10) NULL,
+  PRIMARY KEY (`Card_Number`, `TicketID`, `Luggage_ID`));
+  
+  INSERT INTO `Pay` (`Card_Number`, `TicketID`, `Luggage_ID`)
+  VALUES (561059108, 'T1000', 'L1000');
+
+
+
+
+
+
+ 
+ 
+
+
+    
+    
+ 
+ 
+
+
+
+
+    
+  
+  
+

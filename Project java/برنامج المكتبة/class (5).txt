@@ -1,0 +1,480 @@
+import java.util.*;
+public class Typeofbook extends Book{
+	int choose;
+	int choose1;
+	int choose3;
+	int choose4;
+	Scanner Li=new Scanner(System.in);
+	public void BorB() {
+		try {
+		System.out.println("1-Buy the book \n2-Borrowing the book \n3-Information about the book");
+		choose4=Li.nextInt();
+		}
+		catch(Exception e) {
+			System.err.print ("Error:The input error will only accept numbers");
+			x=1;
+		}
+			if(x!=one)
+			if(choose4==1)
+				buy();
+			else if(choose4==2)
+				
+				Borrow();
+			else if(choose4>=4)
+				
+				System.err.println("Error: Enter 1,2 or 3");
+	}
+	
+
+	
+	
+	
+	
+	
+	public void book1() {
+		System.out.println("__________________________________________________"
+				          +"\n 1-"+nb[0]
+				          +"\n 2-"+nb[1]
+				          +"\n 3-"+nb[2]
+				          +"\n 4-"+nb[3]
+				          +"\n 5-"+nb[4]
+		                  +"\n________________________________________________"
+		                 + "\n Choose what book do you want :");
+				try {
+				choose3=Li.nextInt();
+				}
+				catch(Exception e) {
+					System.err.print ("Error:The input error will only accept numbers");
+		    		 x=1;
+		    	}
+				if(x!=1)
+				switch(choose3){
+				case 1:
+					nameb=nb[0];
+					priceb=pb.get(0);
+					BorB();
+					if(choose4==3)
+						System.out.println("Shakespeare: The World as Stage\r\n" + 
+								"by Bill Bryson\r\n" + 
+								"Rating:3.79/5 \r\n" + 
+								"At first glance, Bill Bryson seems an odd choice to write this addition to the Eminent Lives series. \r\n" + 
+								"The author of 'The Life and Times of the Thunderbolt Kid' isn't, after all, a Shakespeare scholar, a playwright, or even a biographer. \r\n" + 
+								"Reading 'Shakespeare The World As Stage', however, one gets the sense that this eclectic Iowan is exactly the type of person the Bard himself would have selected for the task. \r\n" + 
+								"The man who gave us 'The Mother Tongue' and 'A Walk in the Woods' approaches Shakespeare with the same\n "
+								+ "freedom of spirit and curiosity that made those books such reader favorites. A refreshing take on an elusive literary master.");
+					
+					break;
+				case 2:
+					nameb=nb[1];
+					priceb=pb.get(1);
+					BorB();
+					if(choose4==3)
+						System.out.println("by Elena Dillon (Goodreads Author)\r\n" + 
+								"Rating 4.6/5 " + 
+								"\r\n" + 
+								"\"Elena Dillon's romantic suspense story is well-written and very entertaining..."
+								+ " \nThe characters are well-developed and quickly become part of the reading experience..."
+								+ "\n Exhale is all that a short story or a novella could be;"
+								+ "\n there are several plots and crises running throughout the work, and I easily felt as satisfied and involved with the novella as I would have with a full-length novel."
+								+ "\n I'm looking forward to reading other stories in Dillon's Breathe Series. Exhale is highly recommended.\" ");
+					break;
+				case 3:
+					nameb=nb[2];
+					priceb=pb.get(2);
+					BorB();
+					if(choose4==3)
+						System.out.println("Rumi Poetry: 101 Quotes Of Wisdom On Life, Love And Happiness (Sufi Poetry, Rumi Poetry, Inspirational Quotes, Sufism)\r\n" + 
+								"by John Balkh\r\n" + 
+								" Rating : 3.6/5 " + 
+								"\nRumi has been described as “the most popular poet” in the United States. \r\n" + 
+								"\r\n" + 
+								"Rumi’s popularity has gone beyond national and ethnic borders."
+								+ " \nHe is considered to be one of the greatest classical poets,"
+								+ " \nby the speakers of Persian language in Iran, Afghanistan and Tajikistan. "
+								+ "\nHis poetry is still read worldwide today and has been translated into a wide variety of languages");
+					break;
+				case 4:
+					nameb=nb[3];
+					priceb=pb.get(3);
+					BorB();
+					if(choose4==3)
+						System.out.println("Deep Within\r\n" + 
+								"by A.B. Lee,  M.L. Briers\r\n" + 
+								" Rating :4.23/5  " + 
+								"A full size Lycan Novella. \r\n" + 
+								"\r\n" + 
+								"Jessica walked into his life of her own free will but now he had to find a way to make her stay."
+								+ " \nFinding your mate was one thing, finding a human mate was another entirely."
+								+ " \nJustin had to find a way to get her in his arms, in his bed, and tell her that everything"
+								+ "\n that she knew about life on this planet was wrong."
+								+ "\n The one thing that he didn’t foresee was the secret that was buried deep within her… \r\n" + 
+								"\r\n" + 
+								"Adult Content.");
+					break;
+				case 5:
+					nameb=nb[4];
+					priceb=pb.get(4);
+					BorB();
+					if(choose4==3)
+						System.out.println("The Thoughts, Letters and Opuscules of Blaise Pascal\r\n" + 
+								"by Blaise Pascal,  Henry Rogers, Victor Cousin\r\n" + 
+								" Rating :2.6/5" + 
+								"This work has been selected by scholars as being culturally important,"
+								+ "\n and is part of the knowledge base of civilization as we know it."
+								+ "\n This work was reproduced from the original artifact,"
+								+ " \nand remains as true to the original work as possible."
+								+ "\n Therefore, you will see the original copyright references,"
+								+ "\n library stamps (as most of these works have been housed in our most important libraries around the world),"
+								+ "\n and other notations in the work.This work is in the public domain in the United States of America, and possibly other nations."
+								+ "\n Within the United States, you may freely copy and distribute this work, as no entity (individual or corporate) has a copyright on the body of the work."
+								+ "\nAs a reproduction of a historical artifact, this work may contain missing or blurred pages, poor pictures, errant marks, etc.");
+					break;
+				default :System.err.println("Error: Enter 1,2,3,4 And 5  ");
+				}
+			
+		
+	}
+	public void book2() {
+		System.out.println("__________________________________________________"
+		          +"\n 1-"+nb[5]
+		          +"\n 2-"+nb[6]
+		          +"\n 3-"+nb[7]
+		          +"\n 4-"+nb[8]
+		          +"\n 5-"+nb[9]
+                +"\n________________________________________________"
+               + "\n Choose what book do you want :");
+			try {			
+		choose3=Li.nextInt();
+			}
+			catch(Exception e) {
+				System.err.print ("Error:The input error will only accept numbers");
+	    		 x=1;
+	    	}
+			if(x!=1)
+		switch(choose3){
+		case 1:
+			nameb=nb[5];
+			priceb=pb.get(5);
+			BorB();
+			if(choose4==3)
+				System.out.println("500 Words You Should Know\r\n" + 
+						"by Caroline Taggart (Goodreads Author)\r\n" + 
+						"Rating: 3.82/5" + 
+						"From the author of the bestselling I Used to Know That comes a veracious cornucopia of 500 of the best, trickiest,"
+						+ "\n and oft-misused words in the English language that will have you confabulating with the literary cognoscenti in no time \r\n" + 
+						" \r\n" + 
+						"Ever wanted to ameliorate your atavistic lexicon, engage in a little intellectual badinage,"
+						+ " \nor been discombobulated by tricky diction? 500 Words You Should Know has you covered.");
+
+			break;
+		case 2:
+			nameb=nb[6];
+			priceb=pb.get(6);
+			BorB();
+			if(choose4==3)
+				System.out.println("Lexical Meaning\r\n" + 
+						"(Cambridge Textbooks in Linguistics)\r\n" + 
+						"by M. Lynne Murphy\r\n" + 
+						"Rating 4.22/5 "+ 
+						"The ideal introduction for students of semantics, Lexical Meaning fills the gap left by more general semantics textbooks,"
+						+ "\n providing the teacher and the student with insights into word meaning beyond the traditional overviews of lexical relations. "
+						+ "\nThe book explores the relationship between word meanings and syntax and semantics more generally. "
+						+ "\nIt provides a balanced overview of the main theoretical approaches,"
+						+ " \nalong with a lucid explanation of their relative strengths and weaknesses.");
+			break;
+		case 3:
+			nameb=nb[7];
+			priceb=pb.get(7);
+			BorB();
+			if(choose4==3)
+				System.out.println("This unique book makes learning German easy, practical, and fun! Suitable for teaching adults, as well as older children,"
+						+"\nRating : 3.5/5"
+						+ "\n Barron's Learn German the Fast and Fun Way covers the basics of reading, writing, understanding, and speaking German."
+						+ "\n The engaging, interactive lessons and exercises can be done in just a few minutes per day and are supplemented with:"
+						+ "\n Funny cartoon-style illustrations Language games, puzzles, "
+						+ "\nand quick quizzes A set of vocabulary flashcards A pull-out bilingual dictionary booklet An MP3 CD with audio for all Listening Comprehension activities In just minutes a day,"
+						+ "\n readers will pick up enough German for most everyday situations--from meeting and greeting people to asking directions and handling simple business transactions.");
+			break;
+		case 4:
+			nameb=nb[8];
+			priceb=pb.get(8);
+			BorB();
+			if(choose4==3)
+				System.out.println("Spanish in Three Months Book and CD (Hugo)\r\n" + 
+						"by Isabel Cisneros\r\n" + 
+						"Rating: 3.81/5 " + 
+						"\nThe Hugo series of popular self-study language courses prepares vacation or business travelers going to France, Germany, Italy, Spain, and Spanish-speaking Central and South America. "
+						+ "\nThe books guide readers through essential grammar, pronunciation, and basic conversation with word lists that build vocabulary and exercises that improve speaking skills."
+						+ " \nThe CD use native speakers to demonstrate proper use of the language, Hugo's unique \"imitated pronunciation\" system makes learning a language easy.");
+			break;
+		case 5:
+			nameb=nb[9];
+			priceb=pb.get(9);
+			BorB();
+			if(choose4==3)
+				System.out.println("Very Simple Arabic Script\r\n" + 
+						"by James Peters\r\n" + 
+						"Rating : 4.55/5 " + 
+						"\nFollowing on from its sister-title Very Simple Arabic, this new title in the best-selling series concentrates specifically on the Arabic script, "
+						+ "\n and should be the first port of call for all those who wish to learn how Arabic is written.");
+			break;
+		default :System.err.println("Error: Enter 1,2,3,4 And 5  ");
+		}
+			
+	}
+		public void book3() {
+			System.out.println("__________________________________________________"
+			          +"\n 1-"+nb[10]
+			          +"\n 2-"+nb[11]
+			          +"\n 3-"+nb[12]
+			          +"\n 4-"+nb[13]
+			          +"\n 5-"+nb[14]
+	                  +"\n________________________________________________"
+	                 + "\n Choose what book do you want :");
+		try {
+		choose3=Li.nextInt();
+		}
+		catch(Exception e) {
+			System.err.print ("Error:The input error will only accept numbers");
+    		 x=1;
+    	}
+		if(x!=1)
+			switch(choose3){
+			case 1:
+				nameb=nb[10];
+				priceb=pb.get(10);
+				BorB();
+				if(choose4==3)
+					System.out.println("Gravity Falls: Journal 3\r\n" + 
+							"by Alex Hirsch,  Rob Renzetti, Andy Gonsalves (Illustrator), Stephanie Ramirez (Illustrator)\r\n" + 
+							" Rating 4.72 /5\r\n" + 
+							"Journal 3 brims with every page ever seen on the Gravity Falls show plus all-new pages with monsters and secrets, notes from Dipper and Mabel, and the Author’s full story.\r\n" + 
+							"\r\n" + 
+							"A 288-page full-color jacketed hardcover version of Journal 3—plus, the book jacket doubles as an exclusive poster.");
+
+				break;
+			case 2:
+				nameb=nb[11];
+				priceb=pb.get(11);
+				BorB();
+				if(choose4==3)
+					System.out.println("The Little Prince\r\n" + 
+							"by Antoine de Saint-Exupéry (Author/Illustrator),  Richard Howard (Translator), Dom Marcos Barbosa (Translator), Melina Karakosta (Translator)\r\n" + 
+							" Rating 4.29/5 \r\n" + 
+							"Moral allegory and spiritual autobiography, The Little Prince is the most translated book in the French language."
+							+ "\n With a timeless charm it tells the story of a little boy who leaves the safety of his own tiny planet to travel the universe, "
+							+ "\nlearning the vagaries of adult behaviour through a series of extraordinary encounters."
+							+ "\n His personal odyssey culminates in a voyage to Earth and further adventures.");
+				break;
+			case 3:
+				nameb=nb[12];
+				priceb=pb.get(12);
+				BorB();
+				if(choose4==3)
+					System.out.println("Dog Man: Lord of the Fleas\r\n" + 
+							"(Dog Man #5)\r\n" + 
+							"by Dav Pilkey\r\n" + 
+							" 4.6/5 \r\n" + 
+							"When a new bunch of baddies bust up the town, Dog Man is called into action -- and this time he isn't alone. With a cute kitten and a remarkable robot by his side,"
+							+ "\n our heroes must save the day by joining forces with an unlikely ally: Petey, the World's Most Evil Cat."
+							+ " But can the villainous Petey avoid vengeance and venture into virtue?");
+				break;
+			case 4:
+				nameb=nb[13];
+				priceb=pb.get(13);
+				BorB();
+				if(choose4==3)
+					System.out.println("Oliver Twist\r\n" + 
+							"by Marian Leighton (Adapter),  Ric Estrada (Illustrator), Charles Dickens\r\n" + 
+							" 3.99  /5 \r\n" + 
+							"Oliver Twist is a poor orphan boy cruelly treated in the public workhouse."
+							+ "\n Pennyless and hungry, he runs away to London, only to fall into the clutches of a gang of thieves and pickpockets led by the master criminal, Fagin. Befriended by a man robbed by the gang,"
+							+ "\n Oliver ultimately learns his true identity and gains a home, a fortune, and a family.");
+				break;
+			case 5:
+				nameb=nb[14];
+				priceb=pb.get(14);
+				BorB();
+				if(choose4==3)
+					System.out.println("Zoo 2\r\n" + 
+							"(Zoo #1.5)\r\n" + 
+							"by James Patterson (Goodreads Author),  Max DiLallo\r\n" + 
+							"Rating 3.66/5\r\n" + 
+							"Will the last humans on Earth please turn out the lights?\r\n" + 
+							"\r\n" + 
+							"James Patterson's ZOO was just the beginning. The planet is still under violent siege by ferocious animals. Humans are their desperate prey. "
+							+ "\nExcept some humans are evolving, mutating into a savage species that could save civilization-or end it.");
+				break;
+			default :System.err.println("Error: Enter 1,2,3,4 And 5  ");
+		}
+			
+		
+		}
+		public void book4() {
+			System.out.println("__________________________________________________"
+			          +"\n 1-"+nb[15]
+			          +"\n 2-"+nb[16]
+			          +"\n 3-"+nb[17]
+			          +"\n 4-"+nb[18]
+			          +"\n 5-"+nb[19]
+	                  +"\n________________________________________________"
+	                 + "\n Choose what book do you want :");
+		try {
+		choose3=Li.nextInt();
+		}
+		catch(Exception e) {
+			System.err.print ("Error:The input error will only accept numbers");
+    		 x=1;
+    	}
+		if(x!=1)
+			switch(choose3){
+			case 1:
+				nameb=nb[15];
+				priceb=pb.get(15);
+				BorB();
+				if(choose4==3)
+					System.out.println("What Is Islam?: The Importance of Being Islamic\r\n" + 
+							"by Shahab Ahmed\r\n" + 
+							"Rating 4.34/5\r\n" + 
+							"What is Islam? How do we grasp a human and historical phenomenon characterized by such variety and contradiction?"
+							+ "\n What is \"Islamic\" about Islamic philosophy or Islamic art? Should we speak of Islam or of islams? "
+							+ "\nShould we distinguish the Islamic (the religious) from the Islamicate (the cultural)? "
+							+ "\nOr should we abandon \"Islamic\" altogether as an analytical term?");
+
+				break;
+			case 2:
+				nameb=nb[16];
+				priceb=pb.get(16);
+				BorB();
+				if(choose4==3)
+					System.out.println("The Lost History of Stars\r\n" + 
+							"by Dave Boling (Goodreads Author)\r\n" + 
+							" 3.75  ·   Rating details ·  759 Ratings  ·  155 Reviews\r\n" + 
+							"From a forgotten moment in history comes an inspiring novel about finding strength and courage in the most unimaginable places. \r\n" + 
+							" \r\n" + 
+							"In turn-of-the-century South Africa, fourteen-year-old Lettie, her younger brother,"
+							+ "\n and her mother are Dutch Afrikaner settlers who have been taken from their farm by British soldiers and are being held in a concentration camp. ");
+				break;
+			case 3:
+				nameb=nb[17];
+				priceb=pb.get(17);
+				BorB();
+				if(choose4==3)
+					System.out.println("The True Secret\r\n" + 
+							"by Amira Ayad\r\n" + 
+							" 4.47  ·   Rating details ·  60 Ratings  ·  14 Reviews\r\n" + 
+							"\nAs human beings, we all desire happiness, good health and peace of mind. As Muslims,"
+							+ " \nwe strive to live every aspect of our lives in accordance with our Islamic beliefs, in order to earn the pleasure of Allah and reach paradise in the next life."
+							+ "\n Just how do we go about accomplishing all this, "
+							+ "\nthough? How do we get from where we are to where we want to be?");
+				break;
+			case 4:
+				nameb=nb[18];
+				priceb=pb.get(18);
+				BorB();
+				if(choose4==3)
+					System.out.println("The Noble Quran\r\n" + 
+							"by Anonymous\r\n" + 
+							"Rating 5.0/5 \r\n" + 
+							"GET A COPY");
+				break;
+			case 5:
+				nameb=nb[19];
+				priceb=pb.get(19);
+				BorB();
+				if(choose4==3)
+					System.out.println("Fortress of the Muslim\r\n" + 
+							"by Said Bin Al-Qahtani\r\n" + 
+							" 4.38 /5\r\n" + 
+							"GET A COPY");
+				break;
+			default :System.err.println("Error: Enter 1,2,3,4 And 5  ");
+		}
+			
+		
+	}	
+	public void book5() {
+		System.out.println("__________________________________________________"
+		          +"\n 1-"+nb[20]
+		          +"\n 2-"+nb[21]
+		          +"\n 3-"+nb[22]
+		          +"\n 4-"+nb[23]
+		          +"\n 5-"+nb[24]
+                +"\n________________________________________________"
+               + "\n Choose what book do you want :");
+		try {
+		choose3=Li.nextInt();
+		}
+		catch(Exception e) {
+			System.err.print ("Error:The input error will only accept numbers");
+    		 x=1;
+    	}
+		if(x!=1)
+			switch(choose3){
+			case 1:
+				nameb=nb[20];
+				priceb=pb.get(20);
+				BorB();
+				if(choose4==3)
+					System.out.println("Poor Folk\r\n" + 
+							"by Fyodor Dostoyevsky\r\n" + 
+							"Rating 3.75/5  · \r\n" + 
+							"Poor Folk is an epistolary novel -- that is, a tale told as a series of letters between the characters."
+							+ "\nAnd oh, what characters these are! Makar Dievushkin Alexievitch is a copy writer, barely squeaking by; Barbara Dobroselova Alexievna works as a seamstress,"
+							+ " \nand both face the sort of everyday humiliation society puts upon the poor.");
+
+				break;
+			case 2:
+				nameb=nb[21];
+				priceb=pb.get(21);
+				BorB();
+				if(choose4==3)
+					System.out.println("Hamlet\r\n" + 
+							"by William Shakespeare,  Rex Gibson (Editor), Richard Andrews (Editor)\r\n" + 
+							" Rating 4.01/5 \r\n" + 
+							"Among Shakespeare's plays, \"Hamlet\" is considered by many his masterpiece. Among actors, the role of Hamlet, Prince of Denmark, "
+							+ "is considered the jewel in the crown of a triumphant theatrical career. Now Kenneth Branagh plays the leading role and co-directs a brillant ensemble performance.");
+				break;
+			case 3:
+				nameb=nb[22];
+				priceb=pb.get(22);
+				BorB();
+				if(choose4==3)
+					System.out.println("The Clown\r\n" + 
+							"by Heinrich \r\n" + 
+							" 4.04  ·   Rating details ·  16,761 Ratings  ·  1,024 Reviews\r\n" + 
+							"\nAcclaimed entertainer Hans Schneir collapses when his beloved Marie leaves him because "
+							+ "\nhe won’t marry her within the Catholic Church. The desertion triggers a searing re-examination of his life—the loss of his sister during the war, "
+							+ "the demands of his millionaire father and the hypocrisies of his mother");
+				break;
+			case 4:
+				nameb=nb[23];
+				priceb=pb.get(23);
+				BorB();
+				if(choose4==3)
+					System.out.println("Pride and Prejudice\r\n" + 
+							"by Jane Austen,  Anna Quindlen (Introduction), Mrs. Oliphant (Commentary), George Saintsbury (Commentary), Mark Twain (Commentary), A.C. Bradley (Commentary), Walter A. Raleigh (Commentary), Virginia Woolf (Commentary)\r\n" + 
+							"Rating 4.25 /5\r\n" + 
+							"\nSince its immediate success in 1813, Pride and Prejudice has remained one of the most popular novels in the English language. "
+							+ "\nJane Austen called this brilliant work \"her own darling child\" and its vivacious heroine, Elizabeth Bennet, \"as delightful a creature as ever appeared in print.");
+				break;
+			case 5:
+				nameb=nb[24];
+				priceb=pb.get(24);
+				BorB();
+				if(choose4==3)
+					System.out.println("The Alchemist\r\n" + 
+							"by Paulo Coelho \r\n" + 
+							" Rating 3.84/5  \r\n" + 
+							"\nPaulo Coelho's masterpiece tells the mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure."
+							+ " \nHis quest will lead him to riches far different—and far more satisfying—than he ever imagined.");
+				break;
+			default :System.err.println("Error: Enter 1,2,3,4 And 5  ");
+		}
+			
+		
+	}
+
+
+
+}

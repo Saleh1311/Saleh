@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+public interface Variable {
+	static String[] nb = new String[25];
+    ArrayList<Integer> pb= new ArrayList<Integer>();
+
+
+	
+	int month=30;
+	int one =1;
+	public void Borrow();
+	public void Retrieve();
+	public void buy();
+	
+	
+
+}

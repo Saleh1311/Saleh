@@ -1,0 +1,197 @@
+
+
+
+import java.util.Scanner;
+  public abstract class  Operations implements Variable  {
+
+
+		
+		Scanner B=new Scanner(System.in);
+		int day;
+		   String nameb;
+		  int priceb;
+			private int num;
+			 private String name;
+				private int pay;
+				static int x;
+	
+	 public Operations() {
+			nb[0]="shakespeare" ;	
+			nb[1]="Exhaleý" ;		
+			nb[2]="ýRumi" ;	
+			nb[3]="ýDeep Withiný" ;	
+			nb[4]="ýThoughts & Lettersý" ;
+			nb[5]="ý500ý Words You Should Knowý" ;	
+			nb[6]="Lexical Meaningý" ;	
+			nb[7]="Learn German ý4ýth Edition" ;	
+			nb[8]="ýSpanish in Three Monthsý" ;	
+			nb[9]="ýVery Simple Arabicý" ;
+			nb[10]="ýJournal ý3" ;	
+			nb[11]="The Little Prince" ;	
+			nb[12]="ýLord of The Fleas" ;	
+			nb[13]="ýOliver Twist" ;	
+			nb[14]="The Zoo" ;
+			nb[15]="What Is Islam" ;	
+			nb[16]="ýLost History" ;	
+			nb[17]="ýThe True Secretý" ;	
+			nb[18]="ýThe Noble Quraný" ;	
+			nb[19]="ýFortress of the Muslimý" ;
+			nb[20]="Poor Folk" ;	
+			nb[21]="Hamlet" ;
+			nb[22]="The Clown" ;	
+			nb[23]="Pride and Prejudice" ;
+			nb[24]="The Alchemist";	
+		
+		pb.add(71);     		pb.add(27);			pb.add(79);	        pb.add(45);          pb.add(38);
+		pb.add(47);     		pb.add(65);			pb.add(75);	        pb.add(47);          pb.add(36);
+		pb.add(74);     		pb.add(46);			pb.add(88);	        pb.add(78);          pb.add(37);
+		pb.add(37);     		pb.add(53);			pb.add(46);	        pb.add(87);          pb.add(58);
+		pb.add(41);     		pb.add(63);			pb.add(39);	        pb.add(51);          pb.add(62); 
+	}
+	 
+
+	 
+	  
+	  
+	  public class Customer  {// inner class start
+			Scanner c=new Scanner(System.in);
+
+			public void inf()   {
+				
+				System.out.println("Enter your Name :");
+				setName(c.nextLine());
+				
+				try {
+				System.out.println("Enter your Number ");
+				setNum(c.nextInt());
+				System.out.println("Weclome "+getName());
+				
+				}
+				catch(Exception e) {
+					System.err.println ("Sorry, we have not registered your number");
+					x=1;
+				}
+					
+				}
+
+
+	}// inner class end
+		
+		public abstract void check1();
+		
+	public void Borrow() {
+		new Customer ( ).inf ( );
+		try {
+		if(x!=one) {
+		 System.out.println("How many days you want to borrow the book ?");	
+		
+	    	day=B.nextInt();
+		 
+		}
+		}
+			catch(Exception e) {
+	    		System.err.println ("Error:The input error will only accept numbers");
+	    		 x=1;
+	    	}
+		 	if(x!=one) {
+		 pay=day*2;
+	    
+			  if (day<=month) 
+			  System.out.println("            Hail Library              "
+					  	       + "\nHello "+name
+			  		           + "\nThank you for your cooperation with us"
+			  		           + "\n______________________________________"
+			  		           + "\nBook name                 the amount\n"  
+			  		           +  nameb+"             "+pay+" SAR"
+			  		           + "\n______________________________________"	
+			  				   + "\nDuration of borrowing book is:"+ day+" Days"
+			  				   + "\n______________________________________"
+			  				   + "\nNote:"
+			  				   + "\nIf the book is not returned "
+			  				   + "\nafter a month will be fine" 
+			  				   + "\n______________________________________");
+			   else
+				  System.out.println("You can not borrow more than a month");
+	}}
+	
+	public void  Retrieve() {
+		new Customer ( ).inf ( );
+		try {
+			if(x!=one) {
+    	System.out.println("How many days did you have the book ?");
+    	
+    	day=B.nextInt();
+    	}}
+    	catch(Exception e) {
+    		System.err.println ("Error:The input error will only accept numbers");
+    		 x=1;
+    	}
+    	pay=(day-30)*2;
+		if(x!=one)
+		  if (day<=month)
+			  System.out.println("            Hail Library              "
+			  	       + "\nHello "+name
+	  		           + "\nThank you for your cooperation with us"
+	  		           + "\n______________________________________"
+	  		           + "\nBook name                 the amount\n"  
+	  		           +  nameb+"\"                   0 SAR"
+	  		           + "\n______________________________________"	
+	  				   + "\nDuration  is:"+ day+" Days"
+	  				   + "\n______________________________________"
+	  				   + "\nThank you for dealing with us" 
+	  				   + "\nHave a nice day :)"
+	  				   + "\n______________________________________");	
+		  else
+			  System.out.println("            Hail Library              "
+			  	       + "\nHello "+name
+	  		           + "\nThank you for your cooperation with us"
+	  		           + "\n______________________________________"
+	  		           + "\nBook name                 the amount\n"  
+	  		           +  nameb+"             "+pay+" SAR"
+	  		           + "\n______________________________________"	
+	  				   + "\nDuration is:"+ day+" Days"
+	  				   + "\n You must pay a fine "
+	  				   + "\n______________________________________"
+	  				   + "\nThank you for dealing with us" 
+	  				   + "\nHave a nice day :)"
+	  				   + "\n______________________________________");	
+    	
+	}
+	
+	public void buy() {
+		  System.out.println("            Hail Library              "
+ 		           + "\nThank you for your cooperation with us"
+ 		           + "\n______________________________________"
+ 		           + "\nBook name                 the amount\n"  
+ 		           +  nameb+"             "+priceb+" SAR"
+ 		           + "\n______________________________________"	
+ 				   + "\nRecovery within three (3) days and "
+ 				   + "\nreplacement within seven (7) days"
+ 				   + "\nfrom the date of purchase."
+ 				   + "\n______________________________________"
+ 				   + "\nThank you for dealing with us" 
+ 				   + "\nHave a nice day :)"
+ 				   + "\n______________________________________");
+
+	}
+	
+		public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+
+
+
+	
+ 	
+}

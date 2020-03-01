@@ -1,0 +1,36 @@
+
+public class Mythread implements Runnable {
+	Library L=new Library();
+
+	
+	public void run() {
+        
+        try {
+           // thread to sleep for 1000 milliseconds
+           Thread.sleep(600000);
+	 	System.err.println("###You spent ten minutes in the program####");
+ 	      Thread.sleep(300000);
+ 		 	System.err.println("###You spent fifteen minutes in the program####");
+ 	 	      Thread.sleep(300000);
+ 	 		 	System.err.println("###You spent Twenty minutes in the program####");
+ 	 		 	System.err.println("###The program will close after 3 sec####");
+ 	 	 	      Thread.sleep(1000);
+ 	 	 		 	System.err.println("1");
+ 	 	 	 	      Thread.sleep(1000);
+ 	 	 	 		 	System.err.println("2");
+ 	 	 	 	 	      Thread.sleep(1000);
+ 	 	 	 	 		 	System.err.println("3");
+ 	 	 	 	 		 	System.exit(0);	
+ 	 		 		
+        } catch (Exception e) {
+           System.out.println(e);
+        }
+     }
+		
+}	
+	
+
+
+
+
+

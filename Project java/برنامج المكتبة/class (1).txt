@@ -1,0 +1,18 @@
+
+public class Main {
+
+	public static void main(String[] args)   {
+		Library a=new Library();
+		Thread  t = new Thread(new Mythread()); 
+		Book b=new Book();
+		t.start();
+		a.first();
+		b.p();
+		a.rating();
+		t.stop();
+
+}
+
+	}	
+
+

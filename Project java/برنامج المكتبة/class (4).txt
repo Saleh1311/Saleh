@@ -1,0 +1,171 @@
+import java.util.*;
+
+public class Book  extends Operations {
+	 static Scanner b1=new Scanner(System.in);
+
+	
+	
+	static int found1;
+	  static String book;
+	 	 static int n ; 
+	 static int c ;
+	 static int count=0;  
+	 static int o ;
+
+	 
+	 static void checkagain(){
+		 try {
+        System.out.println("Do you want to search again?\n1-Yes\n2-No");
+        c=b1.nextInt();
+		 }
+			catch(Exception e) {
+				System.err.print ("Error:The input error will only accept numbers\n");
+				x=2;
+			}
+		 if(x!=one)
+        switch(c) {
+        case 1:
+        	
+
+        	p();
+        		
+        	break;
+        case 2 :
+	        System.out.println("Thank you for your cooperation with us");
+	        found1=5;
+
+        break;
+    
+		default :System.err.println("#Error: Enter 1 or 2");
+		found1=5;
+        }
+	}
+	
+	
+	
+	
+	
+	public static void p(){  
+	count++;  
+	if(count<=15){  
+		
+		if(found1==4) {
+		System.out.println("Enter the name of the book you want to search for :");
+		b1.nextLine();
+		book=b1.nextLine();
+		check();
+	p();
+		
+
+		}}
+	}  
+	  
+
+
+	 static void check(){  
+		 
+
+		  int found = 0;
+		  for ( n=0;n<nb.length-1 ; n++) {
+		        if (nb[n].equalsIgnoreCase(book)) {
+		            if (found == 0) {
+		                found = 1;
+		              
+		                }
+		        }
+		    }
+		    if (found == 0) {
+		    	
+		        System.out.println("Sorry: The book does not exist");
+		        found1=4;
+		        checkagain();
+
+		    } else if (found == 1) {
+		        System.out.println("Your book has been found");
+		        found1=5;
+
+			  }
+			}
+
+
+
+	
+
+	 
+	 
+	  public void check1() {
+		    
+
+		  int found = 0;
+		    for ( n=0;n<nb.length-1 ; n++) {
+		        if (nb[n].equalsIgnoreCase(book)) {
+		            if (found == 0) {
+		                found = 1;
+		                nameb=nb[n];
+		                priceb=pb.get(n);
+		                }
+		        }
+		    }
+		    if (found == 0) {
+		        System.out.println("Sorry: The book does not exist");
+		      
+
+		    } else if (found == 1) {
+		    	
+		    	Borrow();
+		    	
+		    }
+	  }
+	
+		
+		public void check2() {
+			  int found = 0;
+			  for ( n=0;n<nb.length-1 ; n++) {
+			        if (nb[n].equalsIgnoreCase(book)) {
+			            if (found == 0) {
+			                found = 1;
+			                nameb=nb[n];
+			                priceb=pb.get(n);
+			                }
+			        }
+			    }
+			    if (found == 0) {
+			        System.out.println("Sorry: The book does not exist");
+			        
+
+			    } else if (found == 1) {
+			    	
+			    	Retrieve();
+			    	
+			    }
+		  }
+			
+		public void check3() {
+			  int found = 0;
+			  for ( n=0;n<nb.length-1 ; n++) {
+			        if (nb[n].equalsIgnoreCase(book)) {
+			            if (found == 0) {
+			                found = 1;
+			                nameb=nb[n];
+			                priceb=pb.get(n);
+			                }
+			        }
+			    }
+			    if (found == 0) {
+			        System.out.println("Sorry: The book does not exist");
+			        
+
+			    } else if (found == 1) {
+					 buy();
+				  }
+				}
+
+
+
+
+
+
+
+		
+	
+}
