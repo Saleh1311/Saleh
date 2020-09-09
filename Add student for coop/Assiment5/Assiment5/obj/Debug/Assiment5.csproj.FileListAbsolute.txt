@@ -1,0 +1,9 @@
+C:\Users\saleh\source\repos\Assiment5\Assiment5\bin\Debug\Assiment5.exe.config
+C:\Users\saleh\source\repos\Assiment5\Assiment5\bin\Debug\Assiment5.exe
+C:\Users\saleh\source\repos\Assiment5\Assiment5\bin\Debug\Assiment5.pdb
+C:\Users\saleh\source\repos\Assiment5\Assiment5\obj\Debug\Assiment5.csprojAssemblyReference.cache
+C:\Users\saleh\source\repos\Assiment5\Assiment5\obj\Debug\Assiment5.Form1.resources
+C:\Users\saleh\source\repos\Assiment5\Assiment5\obj\Debug\Assiment5.Properties.Resources.resources
+C:\Users\saleh\source\repos\Assiment5\Assiment5\obj\Debug\Assiment5.csproj.GenerateResource.cache
+C:\Users\saleh\source\repos\Assiment5\Assiment5\obj\Debug\Assiment5.exe
+C:\Users\saleh\source\repos\Assiment5\Assiment5\obj\Debug\Assiment5.pdb
