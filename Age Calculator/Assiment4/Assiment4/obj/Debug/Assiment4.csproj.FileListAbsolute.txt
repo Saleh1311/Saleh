@@ -1,0 +1,9 @@
+C:\Users\saleh\source\repos\Assiment4\Assiment4\bin\Debug\Assiment4.exe.config
+C:\Users\saleh\source\repos\Assiment4\Assiment4\bin\Debug\Assiment4.exe
+C:\Users\saleh\source\repos\Assiment4\Assiment4\bin\Debug\Assiment4.pdb
+C:\Users\saleh\source\repos\Assiment4\Assiment4\obj\Debug\Assiment4.csprojAssemblyReference.cache
+C:\Users\saleh\source\repos\Assiment4\Assiment4\obj\Debug\Assiment4.Form1.resources
+C:\Users\saleh\source\repos\Assiment4\Assiment4\obj\Debug\Assiment4.Properties.Resources.resources
+C:\Users\saleh\source\repos\Assiment4\Assiment4\obj\Debug\Assiment4.csproj.GenerateResource.cache
+C:\Users\saleh\source\repos\Assiment4\Assiment4\obj\Debug\Assiment4.exe
+C:\Users\saleh\source\repos\Assiment4\Assiment4\obj\Debug\Assiment4.pdb
