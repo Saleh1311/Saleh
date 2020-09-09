@@ -1,0 +1,9 @@
+C:\Users\saleh\Desktop\Assiment\Assiment3\Assiment3\bin\Debug\Assiment3.exe.config
+C:\Users\saleh\Desktop\Assiment\Assiment3\Assiment3\bin\Debug\Assiment3.exe
+C:\Users\saleh\Desktop\Assiment\Assiment3\Assiment3\bin\Debug\Assiment3.pdb
+C:\Users\saleh\Desktop\Assiment\Assiment3\Assiment3\obj\Debug\Assiment3.csprojAssemblyReference.cache
+C:\Users\saleh\Desktop\Assiment\Assiment3\Assiment3\obj\Debug\Assiment3.Form1.resources
+C:\Users\saleh\Desktop\Assiment\Assiment3\Assiment3\obj\Debug\Assiment3.Properties.Resources.resources
+C:\Users\saleh\Desktop\Assiment\Assiment3\Assiment3\obj\Debug\Assiment3.csproj.GenerateResource.cache
+C:\Users\saleh\Desktop\Assiment\Assiment3\Assiment3\obj\Debug\Assiment3.exe
+C:\Users\saleh\Desktop\Assiment\Assiment3\Assiment3\obj\Debug\Assiment3.pdb
